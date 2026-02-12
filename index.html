@@ -152,11 +152,13 @@ button:hover{
 <script>
 function acceptLove(){
 
-    /* ✅ Change background image AFTER clicking */
-    document.body.style.background = 
+    document.body.style.backgroundImage = 
         "linear-gradient(-45deg, rgba(31,28,44,0.8), rgba(146,141,171,0.8), rgba(255,117,140,0.8), rgba(31,28,44,0.8)), url('Photo2.jpg')";
+
     document.body.style.backgroundSize = "400% 400%, cover";
-    document.body.style.backgroundPosition = "center";
+    document.body.style.backgroundPosition = "center center";
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundAttachment = "fixed";
     document.body.style.backgroundBlendMode = "overlay";
 
     alert("You just made my universe complete ❤️");
@@ -186,4 +188,5 @@ createStars();
 
 </body>
 </html>
+
 
